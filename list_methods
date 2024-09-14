@@ -77,17 +77,29 @@ print("List after pop at index 1:", numbers)
    - Removes all items from the list.
    - Example: `[1, 2, 3].clear()` → `[]`
 
-max()
-min()
+lis = [1, 2, 3]
+lis.clear()
+print(lis)
 
+*************************************************************************************************************************************************
 
 7. **`index(x[, start[, end]])`**
    - Returns the index of the first item whose value is equal to `x`. Raises a `ValueError` if the value is not present.
    - Example: `[1, 2, 3].index(2)` → `1`
 
+# list of animals
+Animals= ["cat", "dog", "tiger"]
+# searching positiion of dog
+print(Animals.index("dog"))
+
+*************************************************************************************************************************************************
 8. **`count(x)`**
    - Returns the number of times `x` appears in the list.
    - Example: `[1, 2, 2, 3].count(2)` → `2`
+#create a list
+fruits = ["Apple", "Mango", "Banana", "Cherry" , "Papaya"]
+# printing count using count() function
+print(fruits.count("Apple"))
 
 *************************************************************************************************************************************************
 
@@ -135,5 +147,19 @@ print("Copied list:", copied_list)
 copied_list.append(5)
 print("Modified copied list:", copied_list)
 print("Original list after modifying copied list:", original_list)
+
+*************************************************************************************************************************************************
+ 12. Python list max() function returns the maximum value present in the list.
+
+#creating a list
+num = [2,3,6,1,8,4,9,0]
+#printing max element
+print(max(num))
+
+*************************************************************************************************************************************************
+13.Python min() function returns the smallest of the values or the smallest item in an iterable passed as its parameter.
+
+numbers = [23,25,65,21,98]
+print(min(numbers))
 
 *************************************************************************************************************************************************
