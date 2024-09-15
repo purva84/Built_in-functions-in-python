@@ -3,10 +3,9 @@
    - Example: `[1, 2, 3].append(4)` → `[1, 2, 3, 4]`
 
 # Program to demonstrate the use of append() method
+
 fruits = ['apple', 'banana', 'cherry']
 print("Original list:", fruits)
-
-# Adding a new fruit to the list
 fruits.append('orange')
 print("List after append:", fruits)
 
@@ -18,8 +17,6 @@ print("List after append:", fruits)
 # Program to demonstrate the use of extend() method
 numbers = [1, 2, 3]
 print("Original list:", numbers)
-
-# Adding elements from another list
 numbers.extend([4, 5, 6])
 print("List after extend:", numbers)
 
@@ -32,8 +29,6 @@ print("List after extend:", numbers)
 # Program to demonstrate the use of insert() method
 colors = ['red', 'blue', 'green']
 print("Original list:", colors)
-
-# Inserting a new color at position 1
 colors.insert(1, 'yellow')
 print("List after insert:", colors)
 
@@ -46,8 +41,6 @@ print("List after insert:", colors)
 # Program to demonstrate the use of remove() method
 animals = ['dog', 'cat', 'bird', 'cat']
 print("Original list:", animals)
-
-# Removing the first occurrence of 'cat'
 animals.remove('cat')
 print("List after remove:", animals)
 
@@ -60,13 +53,10 @@ print("List after remove:", animals)
 # Program to demonstrate the use of pop() method
 numbers = [10, 20, 30, 40]
 print("Original list:", numbers)
-
-# Removing the last item
 last_item = numbers.pop()
 print("Removed item:", last_item)
 print("List after pop:", numbers)
 
-# Removing item at index 1
 item_at_index_1 = numbers.pop(1)
 print("Removed item at index 1:", item_at_index_1)
 print("List after pop at index 1:", numbers)
@@ -87,9 +77,7 @@ print(lis)
    - Returns the index of the first item whose value is equal to `x`. Raises a `ValueError` if the value is not present.
    - Example: `[1, 2, 3].index(2)` → `1`
 
-# list of animals
 Animals= ["cat", "dog", "tiger"]
-# searching positiion of dog
 print(Animals.index("dog"))
 
 *************************************************************************************************************************************************
@@ -162,4 +150,44 @@ print(max(num))
 numbers = [23,25,65,21,98]
 print(min(numbers))
 
-*************************************************************************************************************************************************
+************************************************************************************************************************************************
+
+# Initialize a list
+my_list = [1, 2, 3]
+
+# append(x)
+my_list.append(4)  # [1, 2, 3, 4]
+
+# extend(iterable)
+my_list.extend([5, 6])  # [1, 2, 3, 4, 5, 6]
+
+# insert(i, x)
+my_list.insert(1, 10)  # [1, 10, 2, 3, 4, 5, 6]
+
+# remove(x)
+my_list.remove(10)  # [1, 2, 3, 4, 5, 6]
+
+# pop([i])
+popped_item = my_list.pop()  # [1, 2, 3, 4, 5], popped_item = 6
+popped_item = my_list.pop(1)  # [1, 3, 4, 5], popped_item = 2
+
+# clear()
+my_list.clear()  # []
+
+# index(x[, start[, end]])
+my_list = [1, 2, 3, 2]
+index_of_2 = my_list.index(2)  # 1
+
+# count(x)
+count_of_2 = my_list.count(2)  # 2
+
+# sort(key=None, reverse=False)
+my_list.sort(reverse=True)  # [3, 2, 2, 1]
+
+# reverse()
+my_list.reverse()  # [1, 2, 2, 3]
+
+# copy()
+copied_list = my_list.copy()  # [1, 2, 2, 3]
+
+
