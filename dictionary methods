@@ -1,3 +1,114 @@
+### 1. `clear()`
+- **Description**: Removes all items from the dictionary.
+- **Usage**: `dict.clear()`
+- **Example**:
+  ```python
+  my_dict = {'a': 1, 'b': 2}
+  my_dict.clear()
+  print(my_dict)  # Output: {}
+  ```
+
+### 2. `copy()`
+- **Description**: Returns a shallow copy of the dictionary. Changes to the copy will not affect the original dictionary.
+- **Usage**: `dict.copy()`
+- **Example**:
+  ```python
+  my_dict = {'a': 1, 'b': 2}
+  copied_dict = my_dict.copy()
+  print(copied_dict)  # Output: {'a': 1, 'b': 2}
+  ```
+
+### 3. `fromkeys(iterable, value=None)`
+- **Description**: Creates a new dictionary with keys from the provided `iterable` and values set to `value` (defaults to `None`).
+- **Usage**: `dict.fromkeys(iterable, value)`
+- **Example**:
+  ```python
+  keys = ['x', 'y', 'z']
+  new_dict = dict.fromkeys(keys, 0)
+  print(new_dict)  # Output: {'x': 0, 'y': 0, 'z': 0}
+  ```
+
+### 4. `get(key, default=None)`
+- **Description**: Returns the value for the specified `key`. If the `key` is not found, returns `default` (or `None` if `default` is not provided).
+- **Usage**: `dict.get(key, default)`
+- **Example**:
+  ```python
+  my_dict = {'a': 1, 'b': 2}
+  print(my_dict.get('a'))  # Output: 1
+  print(my_dict.get('c', 'not found'))  # Output: not found
+  ```
+
+### 5. `items()`
+- **Description**: Returns a view object that displays a list of a dictionary’s key-value tuple pairs.
+- **Usage**: `dict.items()`
+- **Example**:
+  ```python
+  my_dict = {'a': 1, 'b': 2}
+  print(list(my_dict.items()))  # Output: [('a', 1), ('b', 2)]
+  ```
+
+### 6. `keys()`
+- **Description**: Returns a view object that displays a list of all the dictionary’s keys.
+- **Usage**: `dict.keys()`
+- **Example**:
+  ```python
+  my_dict = {'a': 1, 'b': 2}
+  print(list(my_dict.keys()))  # Output: ['a', 'b']
+  ```
+
+### 7. `pop(key, default=None)`
+- **Description**: Removes the specified key and returns the corresponding value. If the key is not found, `default` is returned if provided; otherwise, a `KeyError` is raised.
+- **Usage**: `dict.pop(key, default)`
+- **Example**:
+  ```python
+  my_dict = {'a': 1, 'b': 2}
+  value = my_dict.pop('a')
+  print(value)  # Output: 1
+  print(my_dict)  # Output: {'b': 2}
+  ```
+
+### 8. `popitem()`
+- **Description**: Removes and returns a (key, value) pair from the dictionary. Pairs are removed in LIFO (last in, first out) order.
+- **Usage**: `dict.popitem()`
+- **Example**:
+  ```python
+  my_dict = {'a': 1, 'b': 2}
+  key_value = my_dict.popitem()
+  print(key_value)  # Output: ('b', 2) or ('a', 1)
+  print(my_dict)  # Output: {'a': 1} or {'b': 2}
+  ```
+
+### 9. `setdefault(key, default=None)`
+- **Description**: Returns the value of `key` if it is in the dictionary. If not, inserts `key` with a value of `default` and returns `default`.
+- **Usage**: `dict.setdefault(key, default)`
+- **Example**:
+  ```python
+  my_dict = {'a': 1}
+  value = my_dict.setdefault('b', 2)
+  print(value)  # Output: 2
+  print(my_dict)  # Output: {'a': 1, 'b': 2}
+  ```
+
+### 10. `update([other])`
+- **Description**: Updates the dictionary with elements from another dictionary or an iterable of key-value pairs. Existing keys are updated with new values.
+- **Usage**: `dict.update([other])`
+- **Example**:
+  ```python
+  my_dict = {'a': 1}
+  my_dict.update({'b': 2, 'c': 3})
+  print(my_dict)  # Output: {'a': 1, 'b': 2, 'c': 3}
+  ```
+
+### 11. `values()`
+- **Description**: Returns a view object that displays a list of all the dictionary’s values.
+- **Usage**: `dict.values()`
+- **Example**:
+  ```python
+  my_dict = {'a': 1, 'b': 2}
+  print(list(my_dict.values()))  # Output: [1, 2]
+  ```
+************************************************************************************************************************************************************************
+
 # Initialize a dictionary
 my_dict = {'a': 1, 'b': 2, 'c': 3}
 
