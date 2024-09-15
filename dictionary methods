@@ -1,0 +1,58 @@
+# Initialize a dictionary
+my_dict = {'a': 1, 'b': 2, 'c': 3}
+
+# clear()
+my_dict.clear()
+print(my_dict)  # Output: {}
+
+# Initialize a dictionary again
+my_dict = {'a': 1, 'b': 2, 'c': 3}
+
+# copy()
+dict_copy = my_dict.copy()
+print(dict_copy)  # Output: {'a': 1, 'b': 2, 'c': 3}
+
+# fromkeys(iterable, value=None)
+keys = ['x', 'y', 'z']
+new_dict = dict.fromkeys(keys, 0)
+print(new_dict)  # Output: {'x': 0, 'y': 0, 'z': 0}
+
+# get(key, default=None)
+value_a = my_dict.get('a')
+value_d = my_dict.get('d', 'not found')
+print(value_a)  # Output: 1
+print(value_d)  # Output: not found
+
+# items()
+items_view = my_dict.items()
+print(list(items_view))  # Output: [('a', 1), ('b', 2), ('c', 3)]
+
+# keys()
+keys_view = my_dict.keys()
+print(list(keys_view))  # Output: ['a', 'b', 'c']
+
+# values()
+values_view = my_dict.values()
+print(list(values_view))  # Output: [1, 2, 3]
+
+# pop(key, default=None)
+value_b = my_dict.pop('b')
+print(value_b)  # Output: 2
+print(my_dict)  # Output: {'a': 1, 'c': 3}
+
+# popitem()
+key_value_pair = my_dict.popitem()
+print(key_value_pair)  # Output: ('c', 3)  (or another pair if the order differs)
+print(my_dict)  # Output: {'a': 1}
+
+# setdefault(key, default=None)
+value_c = my_dict.setdefault('c', 100)
+print(value_c)  # Output: 100
+print(my_dict)  # Output: {'a': 1, 'c': 100}
+value_d = my_dict.setdefault('d', 200)
+print(value_d)  # Output: 200
+print(my_dict)  # Output: {'a': 1, 'c': 100, 'd': 200}
+
+# update([other])
+my_dict.update({'e': 5, 'f': 6})
+print(my_dict)  # Output: {'a': 1, 'c': 100, 'd': 200, 'e': 5, 'f': 6}
